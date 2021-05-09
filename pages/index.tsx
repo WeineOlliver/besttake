@@ -1,6 +1,7 @@
 import { NextPage } from 'next'
 import theme from 'styles/theme'
 import Navigation from 'components/navigation'
+import Leadspace from 'components/leadspace'
 
 const IndexPage: NextPage = () => {
     return (
@@ -10,10 +11,14 @@ const IndexPage: NextPage = () => {
                     html {
                         fontfamily: ${theme.fontFamily};
                     }
+                    * {
+                        margin: 0;
+                        padding: 0;
+                    }
                 `}
             </style>
             <Navigation />
-            <h1> Hello World, Im Besttake :) </h1>
+            <Leadspace />
         </main>
     )
 }
