@@ -13,7 +13,7 @@ const IndexPage: NextPage = () => {
                 `}
             </style>
             <Navigation />
-            <h1> Hello World, Im Besttake </h1>
+            <h1> Hello World, Im Besttake :) </h1>
         </main>
     )
 }
