@@ -2,6 +2,7 @@ import { NextPage } from 'next'
 import Navigation from 'components/navigation'
 import Leadspace from 'components/leadspace'
 import CurtoAdeus from 'components/curto-adeus'
+import BracoDireito from 'components/braco-direito'
 
 const IndexPage: NextPage = () => {
     return (
@@ -30,6 +31,7 @@ const IndexPage: NextPage = () => {
             <Navigation />
             <Leadspace />
             <CurtoAdeus />
+            <BracoDireito />
         </main>
     )
 }
