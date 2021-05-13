@@ -1,6 +1,14 @@
+import { SyntheticEvent } from 'react'
 import theme from 'styles/theme'
 
 const Navigation: React.FC = () => {
+    const handleClick = (event: SyntheticEvent, reference: string): void => {
+        event.preventDefault()
+        return document.getElementById(reference)?.scrollIntoView({
+            behavior: 'smooth',
+        })
+    }
+
     return (
         <div className="nav__container">
             <style jsx>{`
@@ -13,6 +21,14 @@ const Navigation: React.FC = () => {
                     display: flex;
                     justify-content: center;
                     z-index: 1;
+                    border-bottom: solid 1px #cacaca;
+
+                    @media (max-width: 500px) {
+                        justify-content: space-around;
+                        button {
+                            flex: 1;
+                        }
+                    }
 
                     button {
                         background-color: ${theme.colors.white};
@@ -23,9 +39,9 @@ const Navigation: React.FC = () => {
                     }
                 }
             `}</style>
-            <button>O curto adeus</button>
-            <button>O braço direito</button>
-            <button>Contato</button>
+            <button onClick={(e) => handleClick(e, 'o-curto-adeus')}>O curto adeus</button>
+            <button onClick={(e) => handleClick(e, 'braco-direito')}>O braço direito</button>
+            <button onClick={(e) => handleClick(e, 'contato')}>Contato</button>
         </div>
     )
 }

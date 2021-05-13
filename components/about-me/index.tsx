@@ -4,7 +4,7 @@ import Image from 'next/image'
 const AboutMe: React.FC = () => {
     return (
         <>
-            <div className="about__container">
+            <div id="contato" className="about__container">
                 <style jsx>
                     {`
                         .about__container {
@@ -13,6 +13,9 @@ const AboutMe: React.FC = () => {
                             background-color: ${theme.colors.black};
                             color: ${theme.colors.white};
                             font-size: 56px;
+                            @media (max-width: 500px) {
+                                flex-direction: column;
+                            }
 
                             div {
                                 margin-top: 150px;
@@ -27,8 +30,12 @@ const AboutMe: React.FC = () => {
                             flex-direction: column;
                             align-items: flex-start;
                             font-size: 56px;
-                            padding-left: 139px;
+                            padding-left: 25px;
                             margin-bottom: 85px;
+
+                            @media (max-width: 500px) {
+                                flex-direction: column;
+                            }
                         }
                         .about__heading {
                             font-size: 48px;
@@ -54,8 +61,20 @@ const AboutMe: React.FC = () => {
                             margin-left: 95px;
                             margin-top: 233px !important;
 
+                            @media (max-width: 500px) {
+                                width: 350px;
+                                margin-right: 0px;
+                                margin-left: 30px;
+                                margin-top: 0px !important;
+                                margin-bottom: 45px;
+                            }
+
                             .about__subheading {
                                 margin-left: 64px;
+
+                                @media (max-width: 500px) {
+                                    margin-left: 45px;
+                                }
                             }
 
                             input {
@@ -66,6 +85,10 @@ const AboutMe: React.FC = () => {
                                 margin-left: 64px;
                                 margin-right: 64px;
 
+                                @media (max-width: 500px) {
+                                    margin-left: 45px;
+                                    margin-right: 45px;
+                                }
                                 &.input__message {
                                     height: 120px !important;
                                 }
@@ -79,6 +102,10 @@ const AboutMe: React.FC = () => {
                                 width: 130px;
                                 border-radius: 6px;
                                 margin-left: 64px;
+
+                                @media (max-width: 500px) {
+                                    margin-left: 45px;
+                                }
                             }
                         }
 

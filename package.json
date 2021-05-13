@@ -1,6 +1,6 @@
 {
   "name": "besttake",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "An website to show all the work did by the besttake film producers",
   "main": "index.js",
   "author": "Weine Oliveira",
@@ -18,7 +18,7 @@
     "next": "^10.2.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "react-grid-gallery": "^0.5.5",
+    "smoothscroll-polyfill": "^0.4.4",
     "typescript": "^4.2.4"
   },
   "devDependencies": {

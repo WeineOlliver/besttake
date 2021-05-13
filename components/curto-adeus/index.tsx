@@ -4,7 +4,7 @@ import Link from 'next/link'
 
 const CurtoAdeus: React.FC = () => {
     return (
-        <div className="hero__container--white">
+        <div id="o-curto-adeus" className="hero__container--white">
             <style jsx>
                 {`
                     .hero__container--white {
@@ -12,7 +12,9 @@ const CurtoAdeus: React.FC = () => {
                         justify-content: center;
                         align-items: stretch;
                         background-color: ${theme.colors.white};
-
+                        @media (max-width: 500px) {
+                            flex-direction: column;
+                        }
                         div {
                             flex: 1;
                         }
@@ -21,7 +23,6 @@ const CurtoAdeus: React.FC = () => {
                             display: flex;
                             justify-content: center;
                             align-items: stretch;
-
                             div {
                                 flex: 1;
                             }
@@ -33,6 +34,11 @@ const CurtoAdeus: React.FC = () => {
                             flex-direction: column;
                             align-items: flex-start;
                             font-size: 56px;
+
+                            @media (max-width: 500px) {
+                                height: 100vh;
+                                padding: 25px;
+                            }
                             padding: 77px;
                         }
                     }

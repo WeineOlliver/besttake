@@ -4,7 +4,7 @@ import Link from 'next/link'
 
 const BracoDireito: React.FC = () => {
     return (
-        <div className="hero__container--black">
+        <div id="braco-direito" className="hero__container--black">
             <style jsx>
                 {`
                     .hero__container--black {
@@ -13,6 +13,10 @@ const BracoDireito: React.FC = () => {
                         align-items: stretch;
                         background-color: ${theme.colors.black};
                         color: ${theme.colors.white};
+
+                        @media (max-width: 500px) {
+                            flex-direction: column-reverse;
+                        }
 
                         div {
                             flex: 1;
@@ -26,6 +30,10 @@ const BracoDireito: React.FC = () => {
                             font-size: 56px;
                             padding: 77px;
 
+                            @media (max-width: 500px) {
+                                height: 100vh;
+                                padding: 25px;
+                            }
                             span {
                                 padding-top: 30px;
                             }
