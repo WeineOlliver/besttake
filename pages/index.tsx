@@ -1,10 +1,12 @@
 import { NextPage } from 'next'
+import smoothscroll from 'smoothscroll-polyfill'
 import Navigation from 'components/navigation'
 import Leadspace from 'components/leadspace'
 import CurtoAdeus from 'components/curto-adeus'
 import BracoDireito from 'components/braco-direito'
-// import ImageGallery from 'components/image-gallery'
 import AboutMe from 'components/about-me'
+
+smoothscroll.polyfill()
 
 const IndexPage: NextPage = () => {
     return (
@@ -21,6 +23,10 @@ const IndexPage: NextPage = () => {
                     html {
                         font-family: 'Montserrat', sans-serif;
                     }
+                    html,
+                    body {
+                        overflow-x: hidden;
+                    }
                     * {
                         margin: 0;
                         padding: 0;
@@ -28,16 +34,12 @@ const IndexPage: NextPage = () => {
                     .partner__icon {
                         cursor: pointer;
                     }
-                    .ReactGridGallery_tile {
-                        margin: 0 !important;
-                    }
                 `}
             </style>
             <Navigation />
             <Leadspace />
             <CurtoAdeus />
             <BracoDireito />
-            {/* <ImageGallery /> */}
             <AboutMe />
         </main>
     )

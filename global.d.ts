@@ -1,1 +1,1 @@
-declare module 'react-grid-gallery'
+declare module 'smoothscroll-polyfill'
