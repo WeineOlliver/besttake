@@ -39,7 +39,19 @@ const IndexPage: NextPage = () => {
                 <link rel="manifest" href="/manifest.json" />
                 <meta name="msapplication-TileColor" content="#111111" />
                 <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
-                <meta name="theme-color" content="#111111"></meta>
+                <meta name="theme-color" content="#111111" />
+                <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+                <meta property="og:title" content="BestTake - Rodrigo Reinhardt" key="title" />
+                <meta name="description" content="BestTake is a Film Maker by Rodrigo Reinhardt" />
+                <meta
+                    name="keywords"
+                    content="best take, rodrigo reinhardt, rodrigo sicolli, braço direito, o curto adeus, braco direito"
+                />
+                <meta name="author" content="Weine Oliveira" />
+                <meta name="robots" content="index, follow" />
+                <meta property="og:image:type" content="logo/png" />
+                <meta property="og:url" content="https://besttake.com" />
+                <meta property="og:site_name" content="BestTake - Rodrigo Reinhardt" />
             </Head>
             <style jsx global>
                 {`
