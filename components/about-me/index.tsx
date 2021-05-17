@@ -173,8 +173,8 @@ const AboutMe: React.FC = () => {
                     <p className="about__heading">Rodrigo Reinhardt</p>
                     <Image
                         className="about__image"
-                        src="/rodrigo-reinhardt.png"
-                        alt=" A logo da Best Take em um formato onde parece que as duas Letras T forma uma claquete"
+                        src="/rodrigo-reinhardt-thumb.png"
+                        alt="Rodrigo reinhardt"
                         width={200}
                         height={200}
                         layout="intrinsic"
