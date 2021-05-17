@@ -55,14 +55,16 @@ const BracoDireito: React.FC = () => {
                     Distribuição O2 play, em cartaz em todas plataformas digitais. Em breve no
                     <span>
                         <Link href="https://www.primevideo.com/ref=atv_nb_logo?_encoding=UTF8&language=pt_BR">
-                            <Image
-                                className="partner__icon"
-                                src="/prime-video.png"
-                                alt="logo marca do amazon prime"
-                                width={672}
-                                height={186}
-                                layout="intrinsic"
-                            />
+                            <span>
+                                <Image
+                                    className="partner__icon"
+                                    src="/prime-video.png"
+                                    alt="logo marca do amazon prime"
+                                    width={672}
+                                    height={186}
+                                    layout="intrinsic"
+                                />
+                            </span>
                         </Link>
                     </span>
                 </p>

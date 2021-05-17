@@ -47,14 +47,16 @@ const CurtoAdeus: React.FC = () => {
             <div className="hero__content">
                 <p>O curto adeus, mais de 100K espectadores em horario nobre</p>
                 <Link href="https://canaisglobo.globo.com/c/canal-brasil/">
-                    <Image
-                        className="partner__icon"
-                        src="/canal-brasil.png"
-                        alt="logo marca do canal Brasil"
-                        width={104}
-                        height={110}
-                        layout="intrinsic"
-                    />
+                    <a>
+                        <Image
+                            className="partner__icon"
+                            src="/canal-brasil.png"
+                            alt="logo marca do canal Brasil"
+                            width={104}
+                            height={110}
+                            layout="intrinsic"
+                        />
+                    </a>
                 </Link>
             </div>
             <div className="image__mosaic">
