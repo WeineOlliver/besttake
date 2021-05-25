@@ -8,6 +8,7 @@ import Leadspace from 'components/leadspace'
 import CurtoAdeus from 'components/curto-adeus'
 import BracoDireito from 'components/braco-direito'
 import AboutMe from 'components/about-me'
+import ChamadaCanais from 'components/chamada-canais'
 
 const IndexPage: NextPage = () => {
     useEffect(function onFirstMout() {
@@ -64,6 +65,7 @@ const IndexPage: NextPage = () => {
             <Leadspace />
             <CurtoAdeus />
             <BracoDireito />
+            <ChamadaCanais />
             <AboutMe />
         </main>
     )
