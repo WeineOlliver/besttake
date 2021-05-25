@@ -39,6 +39,10 @@ const CurtoAdeus: React.FC = () => {
                                 height: 100vh;
                                 padding: 25px;
                             }
+
+                            a {
+                                margin-top: 70px;
+                            }
                             padding: 77px;
                         }
                     }
@@ -63,14 +67,14 @@ const CurtoAdeus: React.FC = () => {
                 <div>
                     <Image
                         src="/curto-adeus-scene1.png"
-                        alt=" A logo da Best Take em um formato onde parece que as duas Letras T forma uma claquete"
+                        alt=" Dois homens se encarando perto de uma roda de agua "
                         width={420}
                         height={412}
                         layout="responsive"
                     />
                     <Image
                         src="/curto-adeus-scene2.png"
-                        alt=" A logo da Best Take em um formato onde parece que as duas Letras T forma uma claquete"
+                        alt="A vista de uma pessoa dentro de um poço"
                         width={420}
                         height={548}
                         layout="responsive"
@@ -79,7 +83,7 @@ const CurtoAdeus: React.FC = () => {
                 <div>
                     <Image
                         src="/curto-adeus-scene3.png"
-                        alt=" A logo da Best Take em um formato onde parece que as duas Letras T forma uma claquete"
+                        alt="Um senhor de idade mirando com uma arma"
                         width={420}
                         height={960}
                         layout="responsive"
