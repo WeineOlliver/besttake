@@ -49,7 +49,7 @@ const ChamadaCanais: React.FC = () => {
                             @media (max-width: 500px) {
                                 height: 100vh;
                                 padding: 25px;
-                                margin-top: 50px;
+                                padding-top: 0;
                             }
                             padding: 77px;
                         }
@@ -68,7 +68,6 @@ const ChamadaCanais: React.FC = () => {
                                 margin-top: 70px;
                                 justify-content: space-between;
                                 align-items: center;
-                                margin-bottom: 30px;
                             }
 
                             a {
@@ -83,8 +82,7 @@ const ChamadaCanais: React.FC = () => {
                 `}
             </style>
             <div className="hero__content">
-                <h3>Um thriller que vai te prender do primeiro ao ultimo minuto</h3>
-                <p>Assista já na sua casa</p>
+                <h3>Assista já na sua casa</h3>
                 <div className="platform__icons">
                     <Link href="https://tv.apple.com/br/movie/o-braco-direito/umc.cmc.2ugrs91g3geiy63mx5qvsd1bi">
                         <a>
@@ -122,7 +120,7 @@ const ChamadaCanais: React.FC = () => {
                             />
                         </a>
                     </Link>
-                    <Link href="https://www.claro.com.br/now">
+                    <Link href="https://www.nowonline.com.br/filme/o-braco-direito/1447866">
                         <a>
                             <Image
                                 className="partner__icon"
