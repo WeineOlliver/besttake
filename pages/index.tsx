@@ -23,18 +23,26 @@ const IndexPage: NextPage = () => {
                 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
                 <link rel="manifest" href="/site.webmanifest" />
                 <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-                <meta property="og:title" content="Best take - Rodrigo Reinhardt" key="title" />
-                <meta name="description" content="Best take is a Film Maker by Rodrigo Reinhardt" />
+                <meta
+                    property="og:title"
+                    content="Best take filmes - Rodrigo Reinhardt"
+                    key="title"
+                />
+                <meta
+                    name="description"
+                    content="A Best Take Filmes é uma produtora de cinema sediada em São Paulo (SP),
+fundada em 2017 e dirigida pelo cineasta Rodrigo Reinhardt."
+                />
                 <meta
                     name="keywords"
-                    content="best take, rodrigo reinhardt, rodrigo sicolli, braço direito, o curto adeus, braco direito"
+                    content="best take, rodrigo reinhardt, rodrigo sicolli, braço direito, o curto adeus, braco direito, best take filmes, filmes"
                 />
                 <meta name="author" content="Weine Oliveira" />
                 <meta name="robots" content="index, follow" />
                 <meta property="og:image:type" content="logo/png" />
-                <meta property="og:url" content="https://besttake.com" />
-                <meta property="og:site_name" content="Best take - Rodrigo Reinhardt" />
-                <title>Best take - Rodrigo Reinhardt</title>
+                <meta property="og:url" content="https://besttake.com.br" />
+                <meta property="og:site_name" content="Best take filmes - Rodrigo Reinhardt" />
+                <title>Best take filmes - Rodrigo Reinhardt</title>
             </Head>
             <style jsx global>
                 {`
