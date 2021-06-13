@@ -9,6 +9,7 @@ import CurtoAdeus from 'components/curto-adeus'
 import BracoDireito from 'components/braco-direito'
 import AboutMe from 'components/about-me'
 import ChamadaCanais from 'components/chamada-canais'
+import ProcuraDeDayse from 'components/procura-de-dayse'
 
 const IndexPage: NextPage = () => {
     useEffect(function onFirstMout() {
@@ -74,6 +75,7 @@ fundada em 2017 e dirigida pelo cineasta Rodrigo Reinhardt."
             <CurtoAdeus />
             <BracoDireito />
             <ChamadaCanais />
+            <ProcuraDeDayse />
             <AboutMe />
         </main>
     )

@@ -21,27 +21,43 @@ const AboutMe: React.FC = () => {
                             div {
                                 margin-top: 150px;
                                 flex: 1;
+
+                                @media (max-width: 500px) {
+                                    margin-top: 75px;
+                                }
                             }
                         }
 
                         .about__content {
                             display: flex;
-                            margin-left: 77px;
                             flex-wrap: wrap;
                             justify-content: center;
-                            flex-direction: column;
                             align-items: flex-start;
                             font-size: 56px;
                             margin-bottom: 85px;
 
                             @media (max-width: 500px) {
                                 flex-direction: column;
-                                margin-left: 25px;
                             }
                         }
                         .about__heading {
+                            text-align: center;
+                            flex: 0 0 100%;
                             font-size: 48px;
-                            margin-bottom: 87px;
+                        }
+
+                        .about__profile {
+                            &--card {
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: center;
+                                align-items: center;
+                                margin-bottom: 87px;
+
+                                @media (max-width: 500px) {
+                                    margin-bottom: 0px;
+                                }
+                            }
                         }
                         .about__paragraph {
                             font-size: 18px;
@@ -51,64 +67,6 @@ const AboutMe: React.FC = () => {
                         .about__subheading {
                             margin-top: 40px;
                             font-size: 24px;
-                        }
-                        .about__email {
-                            display: flex;
-                            flex-direction: column;
-                            justify-content: space-evenly;
-                            width: 622px;
-                            height: 439px;
-                            border: solid ${theme.colors.white} 1px;
-                            margin-right: 138px;
-                            margin-left: 95px;
-                            margin-top: 233px !important;
-
-                            @media (max-width: 500px) {
-                                width: 350px;
-                                margin-right: 0px;
-                                margin-left: 30px;
-                                margin-top: 0px !important;
-                                margin-bottom: 45px;
-                            }
-
-                            .about__subheading {
-                                margin-left: 64px;
-
-                                @media (max-width: 500px) {
-                                    margin-left: 45px;
-                                }
-                            }
-
-                            input {
-                                width: auto;
-                                height: 40px;
-                                border: 1px solid rgba(255, 255, 255, 0.5);
-                                background: rgba(17, 17, 17, 1);
-                                margin-left: 64px;
-                                margin-right: 64px;
-
-                                @media (max-width: 500px) {
-                                    margin-left: 45px;
-                                    margin-right: 45px;
-                                }
-                                &.input__message {
-                                    height: 120px !important;
-                                }
-                            }
-
-                            button {
-                                background: rgba(24, 160, 251, 1);
-                                border-radius: 6px;
-                                color: ${theme.colors.white};
-                                height: 40px;
-                                width: 130px;
-                                border-radius: 6px;
-                                margin-left: 64px;
-
-                                @media (max-width: 500px) {
-                                    margin-left: 45px;
-                                }
-                            }
                         }
 
                         hr {
@@ -132,6 +90,11 @@ const AboutMe: React.FC = () => {
                             margin-top: 0px !important;
                             flex: 100%;
                             background-color: ${theme.colors.black};
+
+                            a {
+                                text-decoration: none;
+                                color: rgba(24, 160, 251, 1);
+                            }
 
                             @media (max-width: 500px) {
                                 flex-direction: column;
@@ -170,50 +133,72 @@ const AboutMe: React.FC = () => {
                     `}
                 </style>
                 <div className="about__content">
-                    <p className="about__heading">Rodrigo Reinhardt</p>
-                    <Image
-                        className="about__image"
-                        src="/rodrigo-reinhardt-thumb.png"
-                        alt="Rodrigo reinhardt"
-                        width={200}
-                        height={200}
-                        layout="intrinsic"
-                    />
-                    <p className="about__subheading">Sed ut perspiciatis</p>
-                    <p className="about__paragraph">
-                        Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
-                        sed quia consequuntur magni dolores eos qui ratione voluptatem sequi
-                        nesciunt. Neque porro quisquam est.
-                    </p>
-                </div>
-                <div className="about__email">
-                    <p className="about__subheading">Envie sua mensagem</p>
-                    <input type="text" />
-                    <input className="input__message" type="text" />
-                    <button type="submit">Enviar</button>
+                    <p className="about__heading">Conheça nossos realizadores</p>
+                    <div className="about__profile--card">
+                        <Image
+                            className="about__image"
+                            src="/rodrigo-reinhardt.png"
+                            alt="Foto de Rodrigo reinhardt"
+                            width={423}
+                            height={288}
+                            layout="intrinsic"
+                        />
+                        <p className="about__subheading">Rodrigo Reinhardt</p>
+                    </div>
+                    <div className="about__profile--card">
+                        <Image
+                            className="about__image"
+                            src="/guilherme-oliveira.png"
+                            alt="Foto de Guilherme Oliveira"
+                            width={423}
+                            height={288}
+                            layout="intrinsic"
+                        />
+                        <p className="about__subheading">Guilherme Oliveira</p>
+                    </div>
+                    <div className="about__profile--card">
+                        <Image
+                            className="about__image"
+                            src="/rodrigo-mallmann.png"
+                            alt="Foto de Rodrigo Mallmann"
+                            width={423}
+                            height={288}
+                            layout="intrinsic"
+                        />
+                        <p className="about__subheading">Rodrigo Mallmann</p>
+                    </div>
                 </div>
                 <hr />
                 <div className="about__social">
                     <div>
-                        <p>© Besttake, Inc. 2019. We love our users!</p>
+                        <p>
+                            Contato:
+                            <a href="mailto:best.take.pf@gmail.com"> best.take.pf@gmail.com</a>
+                        </p>
                     </div>
                     <div className="about__follow">
                         <span>Follow us: </span>
-                        <img
+                        {/* <img
                             className="social__icon"
                             src="/facebook-icon.png"
                             alt="icone do facebook"
                             width={32}
                             height={32}
-                        />
-                        <img
-                            className="social__icon"
-                            src="/instagram-icon.png"
-                            alt="icone do instagram"
-                            width={32}
-                            height={32}
-                        />
-                        <img
+                        /> */}
+                        <a
+                            target="_blank"
+                            href="https://www.instagram.com/rodrigosreinhardt/?hl=pt-br"
+                            rel="noreferrer"
+                        >
+                            <img
+                                className="social__icon"
+                                src="/instagram-icon.png"
+                                alt="icone do instagram"
+                                width={32}
+                                height={32}
+                            />
+                        </a>
+                        {/* <img
                             className="social__icon"
                             src="/pinterest-icon.png"
                             alt="icone do pinterest"
@@ -226,7 +211,7 @@ const AboutMe: React.FC = () => {
                             alt="icone do youtube"
                             width={32}
                             height={32}
-                        />
+                        /> */}
                     </div>
                 </div>
             </div>

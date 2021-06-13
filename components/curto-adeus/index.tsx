@@ -1,6 +1,5 @@
 import theme from 'styles/theme'
 import Image from 'next/image'
-import Link from 'next/link'
 
 const CurtoAdeus: React.FC = () => {
     return (
@@ -33,15 +32,16 @@ const CurtoAdeus: React.FC = () => {
                             justify-content: center;
                             flex-direction: column;
                             align-items: flex-start;
-                            font-size: 56px;
+                            font-size: 36px;
 
                             @media (max-width: 500px) {
                                 height: 100vh;
                                 padding: 25px;
                             }
 
-                            a {
-                                margin-top: 70px;
+                            p {
+                                margin-bottom: 70px;
+                                line-height: 50px;
                             }
                             padding: 77px;
                         }
@@ -49,19 +49,25 @@ const CurtoAdeus: React.FC = () => {
                 `}
             </style>
             <div className="hero__content">
-                <p>O curto adeus, mais de 100K espectadores em horario nobre</p>
-                <Link href="https://canaisglobo.globo.com/c/canal-brasil/">
-                    <a>
-                        <Image
-                            className="partner__icon"
-                            src="/canal-brasil.png"
-                            alt="logo marca do canal Brasil"
-                            width={104}
-                            height={110}
-                            layout="intrinsic"
-                        />
-                    </a>
-                </Link>
+                <p>”O Curto Adeus”, último curta-metragem de Rodrigo Reinhardt.</p>
+                <p>
+                    A obra ultrapassou a marca de 100 mil telespectadores no Canal Brasil em horário
+                    nobre.
+                </p>
+                <a
+                    target="_blank"
+                    href="https://canaisglobo.globo.com/c/canal-brasil/"
+                    rel="noreferrer"
+                >
+                    <Image
+                        className="partner__icon"
+                        src="/canal-brasil.png"
+                        alt="logo marca do canal Brasil"
+                        width={104}
+                        height={110}
+                        layout="intrinsic"
+                    />
+                </a>
             </div>
             <div className="image__mosaic">
                 <div>
