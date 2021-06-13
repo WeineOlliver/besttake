@@ -1,9 +1,9 @@
 import theme from 'styles/theme'
 import Image from 'next/image'
 
-const BracoDireito: React.FC = () => {
+const ProcuraDeDayse: React.FC = () => {
     return (
-        <div id="braco-direito" className="hero__container--black">
+        <div id="procura-de-dayse" className="hero__container--black">
             <style jsx>
                 {`
                     .hero__container--black {
@@ -27,11 +27,12 @@ const BracoDireito: React.FC = () => {
                             flex-direction: column;
                             align-items: flex-start;
                             font-size: 56px;
-                            padding: 0px 77px 0px 77px;
+                            padding: 77px;
 
                             .hero__paragraph {
-                                &--medium {
+                                &--light {
                                     font-size: 36px;
+                                    font-weight: 100px;
                                 }
                             }
 
@@ -42,8 +43,6 @@ const BracoDireito: React.FC = () => {
                             @media (max-width: 500px) {
                                 height: 100vh;
                                 padding: 25px;
-                                margin-bottom: 50px;
-                                margin-top: 50px;
                             }
                             .partner__icon {
                                 padding-top: 50px;
@@ -54,41 +53,32 @@ const BracoDireito: React.FC = () => {
             </style>
             <div>
                 <Image
-                    src="/braco-direito.png"
+                    src="/procura-de-dayse-1.png"
                     alt="A silueta de um homem encapuzado segurando uma arma com um background bege com uma chamada para o longa metragem Braço direito de Rodrigo Reinhardt"
                     width={840}
-                    height={960}
+                    height={480}
+                    layout="responsive"
+                />
+                <Image
+                    src="/procura-de-dayse-2.png"
+                    alt="A silueta de um homem encapuzado segurando uma arma com um background bege com uma chamada para o longa metragem Braço direito de Rodrigo Reinhardt"
+                    width={840}
+                    height={480}
                     layout="responsive"
                 />
             </div>
             <div className="hero__content">
-                <p className="hero__paragraph--medium">
-                    Com distribuição da O2 play, o drama/policial ”O Braço Direito” marca sua
-                    estréia como diretor num longa-metragem ficcional.
+                <p>”À Procura de Dayse”</p>
+                <p className="hero__paragraph--light">
+                    Dayse Tenório foi vista por 60 milhões de pessoas. Quem é Dayse Tenório?
                 </p>
-                <p className="hero__paragraph--medium">
-                    Em Cartaz em todas as plataformas digitais.
+                <p className="hero__paragraph--light">
+                    Longa-metragem de estréia de Guilherme de Oliveira, documentário com lançamento
+                    para 2022.
                 </p>
-                <p className="hero__paragraph--medium">Em breve na Amazon</p>
-                <span>
-                    <a
-                        target="_blank"
-                        href="https://www.primevideo.com/ref=atv_nb_logo?_encoding=UTF8&language=pt_BR"
-                        rel="noreferrer"
-                    >
-                        <Image
-                            className="partner__icon"
-                            src="/prime-video.png"
-                            alt="logo marca do amazon prime"
-                            width={541}
-                            height={150}
-                            layout="intrinsic"
-                        />
-                    </a>
-                </span>
             </div>
         </div>
     )
 }
 
-export default BracoDireito
+export default ProcuraDeDayse

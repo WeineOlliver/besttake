@@ -1,6 +1,5 @@
 import theme from 'styles/theme'
 import Image from 'next/image'
-import Link from 'next/link'
 
 const ChamadaCanais: React.FC = () => {
     return (
@@ -84,78 +83,90 @@ const ChamadaCanais: React.FC = () => {
             <div className="hero__content">
                 <h3>Assista já na sua casa</h3>
                 <div className="platform__icons">
-                    <Link href="https://tv.apple.com/br/movie/o-braco-direito/umc.cmc.2ugrs91g3geiy63mx5qvsd1bi">
-                        <a>
-                            <Image
-                                className="partner__icon"
-                                src="/apple-tv.png"
-                                alt="logo marca da apple tv"
-                                width={123}
-                                height={76}
-                                layout="intrinsic"
-                            />
-                        </a>
-                    </Link>
-                    <Link href="https://play.google.com/store/movies/details/O_Bra%C3%A7o_Direito?id=xW_jxpVKBRk.P&hl=pt-br">
-                        <a>
-                            <Image
-                                className="partner__icon"
-                                src="/playstore.png"
-                                alt="logo marca da playstore"
-                                width={71}
-                                height={76}
-                                layout="intrinsic"
-                            />
-                        </a>
-                    </Link>
-                    <Link href="https://www.vivoplay.com.br/details/movie/o-braco-direito-11327387">
-                        <a>
-                            <Image
-                                className="partner__icon"
-                                src="/vivo-play.png"
-                                alt="logo marca do vivo play"
-                                width={76}
-                                height={76}
-                                layout="intrinsic"
-                            />
-                        </a>
-                    </Link>
-                    <Link href="https://www.nowonline.com.br/filme/o-braco-direito/1447866">
-                        <a>
-                            <Image
-                                className="partner__icon"
-                                src="/now.png"
-                                alt="logo marca do net now"
-                                width={151}
-                                height={76}
-                                layout="intrinsic"
-                            />
-                        </a>
-                    </Link>
-                    <Link href="https://www.looke.com.br/filmes/o-braco-direito">
-                        <a>
-                            <Image
-                                className="partner__icon"
-                                src="/looke.png"
-                                alt="logo marca do looke"
-                                width={76}
-                                height={76}
-                                layout="intrinsic"
-                            />
-                        </a>
-                    </Link>
-                    <Link href="https://www.youtube.com/watch?v=WWCN_PyLnek">
-                        <a>
-                            <Image
-                                className="partner__icon"
-                                src="/youtube.png"
-                                alt="logo marca do youtube"
-                                width={76}
-                                height={76}
-                                layout="intrinsic"
-                            />
-                        </a>
-                    </Link>
+                    <a
+                        target="_blank"
+                        href="https://tv.apple.com/br/movie/o-braco-direito/umc.cmc.2ugrs91g3geiy63mx5qvsd1bi"
+                        rel="noreferrer"
+                    >
+                        <Image
+                            className="partner__icon"
+                            src="/apple-tv.png"
+                            alt="logo marca da apple tv"
+                            width={123}
+                            height={76}
+                            layout="intrinsic"
+                        />
+                    </a>
+                    <a
+                        target="_blank"
+                        href="https://play.google.com/store/movies/details/O_Bra%C3%A7o_Direito?id=xW_jxpVKBRk.P&hl=pt-br"
+                        rel="noreferrer"
+                    >
+                        <Image
+                            className="partner__icon"
+                            src="/playstore.png"
+                            alt="logo marca da playstore"
+                            width={71}
+                            height={76}
+                            layout="intrinsic"
+                        />
+                    </a>
+                    <a
+                        target="_blank"
+                        href="https://www.vivoplay.com.br/details/movie/o-braco-direito-11327387"
+                        rel="noreferrer"
+                    >
+                        <Image
+                            className="partner__icon"
+                            src="/vivo-play.png"
+                            alt="logo marca do vivo play"
+                            width={76}
+                            height={76}
+                            layout="intrinsic"
+                        />
+                    </a>
+                    <a
+                        target="_blank"
+                        href="https://www.nowonline.com.br/filme/o-braco-direito/1447866"
+                        rel="noreferrer"
+                    >
+                        <Image
+                            className="partner__icon"
+                            src="/now.png"
+                            alt="logo marca do net now"
+                            width={151}
+                            height={76}
+                            layout="intrinsic"
+                        />
+                    </a>
+                    <a
+                        target="_blank"
+                        href="https://www.looke.com.br/filmes/o-braco-direito"
+                        rel="noreferrer"
+                    >
+                        <Image
+                            className="partner__icon"
+                            src="/looke.png"
+                            alt="logo marca do looke"
+                            width={76}
+                            height={76}
+                            layout="intrinsic"
+                        />
+                    </a>
+                    <a
+                        target="_blank"
+                        href="https://www.youtube.com/watch?v=WWCN_PyLnek"
+                        rel="noreferrer"
+                    >
+                        <Image
+                            className="partner__icon"
+                            src="/youtube.png"
+                            alt="logo marca do youtube"
+                            width={76}
+                            height={76}
+                            layout="intrinsic"
+                        />
+                    </a>
                 </div>
             </div>
             <div>
