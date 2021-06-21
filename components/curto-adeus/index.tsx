@@ -42,6 +42,18 @@ const CurtoAdeus: React.FC = () => {
                             p {
                                 margin-bottom: 70px;
                                 line-height: 50px;
+
+                                &:nth-child(1) {
+                                    @media (max-width: 500px) {
+                                        font-size: 25px;
+                                    }
+                                }
+                                &:nth-child(2) {
+                                    @media (max-width: 500px) {
+                                        font-size: 30px;
+                                        text-align: right;
+                                    }
+                                }
                             }
                             padding: 77px;
                         }

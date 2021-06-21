@@ -26,7 +26,7 @@ const IndexPage: NextPage = () => {
                 <meta name="viewport" content="initial-scale=1.0, width=device-width" />
                 <meta
                     property="og:title"
-                    content="Best take filmes - Rodrigo Reinhardt"
+                    content="Best Take Filmes - Rodrigo Reinhardt"
                     key="title"
                 />
                 <meta
@@ -36,13 +36,13 @@ fundada em 2017 e dirigida pelo cineasta Rodrigo Reinhardt."
                 />
                 <meta
                     name="keywords"
-                    content="best take, rodrigo reinhardt, rodrigo sicolli, braço direito, o curto adeus, braco direito, best take filmes, filmes"
+                    content="Best Take, rodrigo reinhardt, rodrigo sicolli, braço direito, o curto adeus, braco direito, best take filmes, filmes"
                 />
                 <meta name="author" content="Weine Oliveira" />
                 <meta name="robots" content="index, follow" />
                 <meta property="og:image:type" content="logo/png" />
                 <meta property="og:url" content="https://besttake.com.br" />
-                <meta property="og:site_name" content="Best take filmes - Rodrigo Reinhardt" />
+                <meta property="og:site_name" content="Best Take Filmes - Rodrigo Reinhardt" />
                 <title>Best take filmes - Rodrigo Reinhardt</title>
             </Head>
             <style jsx global>
