@@ -37,13 +37,30 @@ const BracoDireito: React.FC = () => {
 
                             p {
                                 margin-bottom: 54px;
+                                &:nth-child(1) {
+                                    @media (max-width: 500px) {
+                                        font-size: 25px;
+                                    }
+                                }
+                                &:nth-child(2) {
+                                    @media (max-width: 500px) {
+                                        font-size: 30px;
+                                        text-align: right;
+                                    }
+                                }
+
+                                &:nth-child(3) {
+                                    @media (max-width: 500px) {
+                                        width: 100%;
+                                        font-size: 30px;
+                                        text-align: center;
+                                    }
+                                }
                             }
 
                             @media (max-width: 500px) {
                                 height: 100vh;
                                 padding: 25px;
-                                margin-bottom: 50px;
-                                margin-top: 50px;
                             }
                             .partner__icon {
                                 padding-top: 50px;

@@ -36,12 +36,16 @@ const Navigation: React.FC = () => {
                         width: 10%;
                         font-size: 15px;
                         line-height: 18px;
+                        @media (max-width: 500px) {
+                            overflow-wrap: break-word;
+                            text-overflow: ellipsis;
+                        }
                     }
                 }
             `}</style>
-            <button onClick={(e) => handleClick(e, 'o-curto-adeus')}> Curto adeus</button>
-            <button onClick={(e) => handleClick(e, 'braco-direito')}> Braço direito</button>
-            <button onClick={(e) => handleClick(e, 'procura-de-dayse')}> Procura de Dayse</button>
+            <button onClick={(e) => handleClick(e, 'o-curto-adeus')}> O Curto adeus</button>
+            <button onClick={(e) => handleClick(e, 'braco-direito')}> O Braço direito</button>
+            <button onClick={(e) => handleClick(e, 'procura-de-dayse')}>À Procura de Dayse</button>
             <button onClick={(e) => handleClick(e, 'contato')}>Contato</button>
         </div>
     )

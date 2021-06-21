@@ -4,7 +4,7 @@ import Image from 'next/image'
 const AboutMe: React.FC = () => {
     return (
         <>
-            <div id="contato" className="about__container">
+            <div className="about__container">
                 <style jsx>
                     {`
                         .about__container {
@@ -44,6 +44,10 @@ const AboutMe: React.FC = () => {
                             text-align: center;
                             flex: 0 0 100%;
                             font-size: 48px;
+
+                            @media (max-width: 500px) {
+                                width: 100%;
+                            }
                         }
 
                         .about__profile {
@@ -133,7 +137,7 @@ const AboutMe: React.FC = () => {
                     `}
                 </style>
                 <div className="about__content">
-                    <p className="about__heading">Conheça nossos realizadores</p>
+                    <p className="about__heading">Realizadores</p>
                     <div className="about__profile--card">
                         <Image
                             className="about__image"
@@ -169,7 +173,7 @@ const AboutMe: React.FC = () => {
                     </div>
                 </div>
                 <hr />
-                <div className="about__social">
+                <div id="contato" className="about__social">
                     <div>
                         <p>
                             Contato:
