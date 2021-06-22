@@ -43,8 +43,8 @@ const Navigation: React.FC = () => {
                     }
                 }
             `}</style>
-            <button onClick={(e) => handleClick(e, 'o-curto-adeus')}> O Curto adeus</button>
-            <button onClick={(e) => handleClick(e, 'braco-direito')}> O Braço direito</button>
+            <button onClick={(e) => handleClick(e, 'o-curto-adeus')}> O Curto Adeus</button>
+            <button onClick={(e) => handleClick(e, 'braco-direito')}> O Braço Direito</button>
             <button onClick={(e) => handleClick(e, 'procura-de-dayse')}>À Procura de Dayse</button>
             <button onClick={(e) => handleClick(e, 'contato')}>Contato</button>
         </div>

@@ -86,11 +86,11 @@ const BracoDireito: React.FC = () => {
                 <p className="hero__paragraph--medium">
                     Em Cartaz em todas as plataformas digitais.
                 </p>
-                <p className="hero__paragraph--medium">Em breve na Amazon</p>
+                <p className="hero__paragraph--medium">Agora na Amazon</p>
                 <span>
                     <a
                         target="_blank"
-                        href="https://www.primevideo.com/ref=atv_nb_logo?_encoding=UTF8&language=pt_BR"
+                        href="https://www.primevideo.com/dp/amzn1.dv.gti.40bbb475-8410-d066-7dc7-34709bee0dda?autoplay=1&ref_=atv_cf_strg_wb"
                         rel="noreferrer"
                     >
                         <Image
