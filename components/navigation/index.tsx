@@ -37,6 +37,7 @@ const Navigation: React.FC = () => {
                         font-size: 15px;
                         line-height: 18px;
                         @media (max-width: 500px) {
+                            font-size: 11px;
                             overflow-wrap: break-word;
                             text-overflow: ellipsis;
                         }
