@@ -36,7 +36,7 @@ fundada em 2017 e dirigida pelo cineasta Rodrigo Reinhardt."
                 />
                 <meta
                     name="keywords"
-                    content="Best Take, rodrigo reinhardt, rodrigo sicolli, braço direito, o curto adeus, braco direito, best take filmes, filmes"
+                    content="Best Take, rodrigo reinhardt, produtora de filmes, takefilmes, best take sao paulo, take filmes sao paulo, best take filmes, take filmes"
                 />
                 <meta name="author" content="Weine Oliveira" />
                 <meta name="robots" content="index, follow" />
