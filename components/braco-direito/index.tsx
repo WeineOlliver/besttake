@@ -25,7 +25,7 @@ const BracoDireito: React.FC = () => {
                             display: flex;
                             justify-content: center;
                             flex-direction: column;
-                            align-items: flex-start;
+                            align-items: center;
                             font-size: 56px;
                             padding: 0px 77px 0px 77px;
 
@@ -38,23 +38,17 @@ const BracoDireito: React.FC = () => {
                             p {
                                 margin-bottom: 54px;
                                 &:nth-child(1) {
-                                    @media (max-width: 500px) {
-                                        font-size: 25px;
-                                    }
+                                    font-size: 25px;
                                 }
                                 &:nth-child(2) {
-                                    @media (max-width: 500px) {
-                                        font-size: 30px;
-                                        text-align: right;
-                                    }
+                                    font-size: 30px;
+                                    text-align: right;
                                 }
 
                                 &:nth-child(3) {
-                                    @media (max-width: 500px) {
-                                        width: 100%;
-                                        font-size: 30px;
-                                        text-align: center;
-                                    }
+                                    width: 100%;
+                                    font-size: 30px;
+                                    text-align: center;
                                 }
                             }
 
