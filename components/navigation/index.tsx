@@ -19,7 +19,7 @@ const Navigation: React.FC = () => {
                     width: 100%;
                     height: 60px;
                     display: flex;
-                    justify-content: center;
+                    justify-content: space-evenly;
                     z-index: 1;
                     border-bottom: solid 1px #cacaca;
 
@@ -37,9 +37,12 @@ const Navigation: React.FC = () => {
                         font-size: 15px;
                         line-height: 18px;
                         @media (max-width: 500px) {
-                            font-size: 11px;
+                            font-size: 10px;
                             overflow-wrap: break-word;
                             text-overflow: ellipsis;
+                            &:nth-child(2) {
+                                padding-right: 12px;
+                            }
                         }
                     }
                 }

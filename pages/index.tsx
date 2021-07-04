@@ -29,6 +29,7 @@ const IndexPage: NextPage = () => {
                     content="Best Take Filmes - Rodrigo Reinhardt"
                     key="title"
                 />
+                <meta name="title" content="Best Take Filmes - Rodrigo Reinhardt" />
                 <meta
                     name="description"
                     content="A Best Take Filmes é uma produtora de cinema sediada em São Paulo (SP),
@@ -43,7 +44,7 @@ fundada em 2017 e dirigida pelo cineasta Rodrigo Reinhardt."
                 <meta property="og:image:type" content="logo/png" />
                 <meta property="og:url" content="https://besttake.com.br" />
                 <meta property="og:site_name" content="Best Take Filmes - Rodrigo Reinhardt" />
-                <title>Best take filmes - Rodrigo Reinhardt</title>
+                <title>Best Take Filmes - Rodrigo Reinhardt</title>
             </Head>
             <style jsx global>
                 {`
