@@ -153,12 +153,12 @@ const AboutMe: React.FC = () => {
                         <Image
                             className="about__image"
                             src="/guilherme-oliveira.png"
-                            alt="Foto de Guilherme Oliveira"
+                            alt="Foto de Guilherme de Oliveira"
                             width={423}
                             height={288}
                             layout="intrinsic"
                         />
-                        <p className="about__subheading">Guilherme Oliveira</p>
+                        <p className="about__subheading">Guilherme de Oliveira</p>
                     </div>
                     <div className="about__profile--card">
                         <Image
